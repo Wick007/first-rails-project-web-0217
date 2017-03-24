@@ -1,0 +1,8 @@
+<h1>Update</h1>
+
+<%= form_for @actor, method:"PATCH" do |f| %>
+<%= f.text_field :name, placeholder: "name" %>
+<%= f.number_field :age, placeholder: "age" %>
+<%= f.text_field :nationality, placeholder: "nationality" %>
+<%= f.submit %>
+<%  end %>
