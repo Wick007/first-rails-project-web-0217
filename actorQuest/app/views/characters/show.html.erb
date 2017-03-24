@@ -1,0 +1,10 @@
+<h1>Character</h1>
+
+<%= @character.name%><br>
+<%= @character.bio %><br>
+<%= link_to @character.movie.name, @character.movie %><br>
+<%= link_to @character.actor.name, @character.actor %><br>
+
+<br><br><br>
+
+<%= link_to "delete character", character_path, method:"DELETE" %>

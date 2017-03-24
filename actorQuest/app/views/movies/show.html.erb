@@ -1,0 +1,13 @@
+<h1>Movie</h1>
+
+<%= @movie.name%><br>
+<%= @movie.year %><br>
+<%= @movie.blurb %><br>
+<%= @movie.director %><br>
+<br><br>
+<h3>Characters</h3>
+<% @movie.characters.each do |character| %>
+  <%= link_to character.name, character %><br>
+<% end  %>
+<br><br>
+<%= link_to "delete movie", movie_path, method:"DELETE" %>

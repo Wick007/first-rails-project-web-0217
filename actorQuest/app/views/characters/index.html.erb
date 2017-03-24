@@ -1,0 +1,8 @@
+<h1>Character List</h1>
+
+<% @characters.each do |e| %>
+<%= link_to e.name, e  %><br>
+<% end %>
+
+<br>
+<%= link_to "Make a new one!", new_character_path %>
