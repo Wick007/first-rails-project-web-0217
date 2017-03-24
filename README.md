@@ -1,4 +1,4 @@
-## First Rails Project
+## Rails Pairing Project
 
 ### Overview
 For this project you will be working in pairs to build your very first Rails project. No tests will be involved so you will be able to be creative with your ideas so long as you meet the requirements below. Get your ideas approved by an instructor before you start coding.
@@ -20,6 +20,10 @@ Your application should follow RESTful conventions, in that, your models should 
 ##### Forms
 
 Your project should include a nested form for your has_many, belongs_to relationship. For example: If I am creating a Song in a form, I should be able to select from a list of Genres that exist already, or create a new one at the same time.
+
+##### Authentication
+
+Your project should have a form for a user to log in.  They should not be able to see anything but the login form until they are logged in.  They should also be able to log out.  Bonus points for having an option to create a new user in the form.
 
 ##### Recap
 1 . Postgresql  
