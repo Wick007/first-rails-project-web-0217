@@ -9,5 +9,16 @@
 <% @movie.characters.each do |character| %>
   <%= link_to character.name, character %><br>
 <% end  %>
+
+<br><br>
+<%= form_for @character do |f| %>
+  <%= f.text_field :name, placeholder: "Name" %>
+  <%= f.text_area :bio, placeholder: "Bio" %>
+  <%= f.collection_select :actor_id, Actor.all, :id, :name %><br>
+  <%= f.hidden_field :movie_id, value: @movie.id %>
+  <%= f.submit %>
+
+<% end %>
+
 <br><br>
 <%= link_to "delete movie", movie_path, method:"DELETE" %>
